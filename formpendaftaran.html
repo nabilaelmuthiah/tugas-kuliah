@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Registration Form</title>
+</head>
+<body style="margin-left: 200px; margin-right: 200px; background-color: whitesmoke; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h1 align="center" style="color: darkblue;">STUDENT REGISTRATION FORM </h1> <br>
+    <div align="left" id="form1">    
+    <form action="formregis.html" method="POST"> 
+    <table cellpadding="2px" style="">
+        <tr>
+            <td align="right"><label for="number_registration"> REGISTRATION NUMBER : </label>
+                <input type="number" name="number" min="0" max="200" required=""></td>
+            <td></td>
+            <td align="left"><label for="date" align="left">DATE : </label>
+                <input type="date" name="date" required=""></td> 
+        </tr>   
+    </table>
+    </div><br><br>
+
+    <div align="left" id="form2">
+        <h3>PERSONAL INFORMATION</h3><hr>
+        <label for="name">NAME &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp13;: </label>
+        <input type="text" name="name" placeholder="enter your name" required=""><br><br>
+        <label for="id">ID CARD NUMBER &nbsp;:</label>
+        <input type="text" name="id" required=""><br><br>
+        <label for="birth">DATE OF BIRTH &emsp14; &emsp13; &emsp13;:</label>
+        <input type="text" name="date" placeholder="enter your birthday" required=""><br><br> 
+        <label for="foto"> PHOTO &emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="file" name="photo" required=""> <br><br>
+    </div>
+    <div>
+        <label for="gender">GENDER &emsp;&emsp; &emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </label>
+            <input type="radio" name="gender" required="">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" required="">
+            <label for="gender">Female</label><br><br>
+    </div>
+    <div>
+        <label for="religion"> RELIGION  &emsp;&emsp;&emsp;&emsp;&nbsp;: </label>
+        <select name="religion" id=""required="">
+            <option value="Islam">ISLAM</option>
+            <option value="Kristen">KRISTEN</option>
+            <option value="BUDDHA">BUDDHA</option>
+            <option value="Hindu">HINDU</option>
+        </select>
+    </div>
+    <div align="left" id="form2">  
+        <p>ADDRESS  &emsp; &emsp;&emsp;&nbsp;&nbsp; :  </p> 
+            <textarea name="address" rows="2" cols="104" placeholder="enter your address here" required=""></textarea><br><br>
+        <label for="city"> CITY &emsp; &emsp;&emsp;&emsp;&emsp; &emsp;: </label>
+        <input type="text" name="city" required>
+        &emsp; &emsp;&emsp;&emsp; 
+        <label for="province">PROVINCE/STATE &emsp; &emsp;&emsp;&emsp;&emsp; : </label>
+        <input type="text" name="province" required=""> <br><br>
+    </div>
+    <div>
+        <label for="zipcode">ZIP CODE &emsp; &emsp;&emsp; &nbsp;:</label>
+        <input type="text" name="zipcode" required="">
+        &emsp; &emsp;&emsp;&emsp; 
+        <label for="country">COUNTRY &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;:</label>
+        <input type="text" name="country" required=""><br><br>
+    </div>
+    <div>
+        <label for="phone">PHONE &emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
+        &emsp;&emsp; &emsp;&emsp;
+        <label for="email">EMAIL &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&nbsp; &nbsp;&nbsp;&nbsp;:</label>
+        <input type="email" name="email" required=""><br><br>
+    </div>
+    <div align="left" id="form2"> 
+        <h3>PARENTAL DATA</h3><hr><br>
+        <fieldset>
+            <legend><b>FATHER'S DATA</b></legend>
+            <div>
+                <br>
+                <label for="father">NAME &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp13;: </label>
+                <input type="text" name="father" required=""><br>
+                <p>ADDRESS  &emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp; :  </p> 
+                <textarea name="Faddress" rows="2" cols="104" placeholder="enter your address here" required=""></textarea>
+                <br><br>
+            </div>
+            <div>
+                <label for="Fphone">PHONE &emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="phone" name="Fphone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required=""><br><br>
+            </div>
+            <div>
+                <label for="Fproffesion">PROFFESION &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <select>
+                    <option value="">  </option>
+                    <option value="PNS">PNS</option>
+                    <option value="Pegawai Swasta">Pegawai Swasta</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="Tidak Bekerja">Tidak Bekerja</option>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <br><br>
+    <div>
+        <fieldset>
+            <legend><b>MOTHER'S DATA</b></legend>
+            <div>
+                <br>
+                <label for="mother">NAME &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp13;: </label>
+                <input type="text" name="mother" required=""><br>
+                <p>ADDRESS  &emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp; :  </p> 
+                <textarea name="Maddress" rows="2" cols="104" placeholder="enter your address here" required=""></textarea>
+                <br><br>
+            </div>
+            <div>
+                <label for="Mphone">PHONE &emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <input type="phone" name="Mphone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required=""><br><br>
+            </div>
+            <div>
+                <label for="Fproffesion">PROFFESION &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                <select>
+                    <option value=""></option>
+                    <option value="PNS">PNS</option>
+                    <option value="Pegawai Swasta">Pegawai Swasta</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Wiraswasta">Wiraswasta</option>
+                    <option value="IRT">Ibu Rumah Tangga </option>
+                    <option value="Tidak Bekerja">Tidak Bekerja</option>
+                </select>
+            </div>
+        </fieldset>
+    </div>
+    <br><br>
+    <div align="right">
+        <table>
+            <tr>
+                <td > <fieldset>
+                    <legend>Signature and Name Light</legend>
+                    <textarea name="sign" id="" cols="30" rows="10"></textarea>
+                </fieldset></td>
+
+                <td><fieldset>
+                        <legend>Parent's Sign and Name Light</legend>
+                        <textarea name="Psign" id="" cols="30" rows="10"></textarea>
+                    </fieldset></td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>
